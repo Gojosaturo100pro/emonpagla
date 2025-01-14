@@ -719,8 +719,6 @@ def setting():
 def passwrd():
     os.system('clear')
     print(logo)
-    print('\033[1;92m[\033[1;91m•\033[1;92m]\033[1;95m STARTING TIME : \033[1;92m' + str(rtime))
-        print('\033[1;92m[\033[1;91m•\033[1;92m]\033[1;95m TODAY DATE : \033[1;92m' + str(now.date()))
     print(f"\033[1;31m[\033[1;37m+\033[1;31m] \033[1;92mUSER NAME\033[1;91m    \033[0;97m:\033[38;5;208m "+uname)
     print('\033[1;31m[\033[1;37m+\033[1;31m] \033[1;92mYOUR TOTAL UID  \033[0;97m:\033[1;96m', str(len(id)))
     print(f'\033[1;31m[\033[1;37m+\033[1;31m]\033[1;92m TURN \033[1;37m[\033[1;92mON\033[1;31m/\033[1;92mOFF\033[1;37m]\033[1;92m AIRPLANE MODE EVERY 5 MIN')
